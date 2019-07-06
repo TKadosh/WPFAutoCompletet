@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CSWPFAutoCompleteTextBox</name>
+    </assembly>
+    <members>
+        <member name="T:CSWPFAutoCompleteTextBox.MainWindow">
+            <summary>
+            Interaction logic for Window1.xaml
+            </summary>
+            <summary>
+            MainWindow
+            </summary>
+        </member>
+        <member name="M:CSWPFAutoCompleteTextBox.MainWindow.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:CSWPFAutoCompleteTextBox.MainWindow"/> class.
+            </summary>
+        </member>
+        <member name="M:CSWPFAutoCompleteTextBox.MainWindow.ConstructAutoCompletionSource">
+            <summary>
+            Constructs the auto completion source.
+            </summary>
+        </member>
+        <member name="M:CSWPFAutoCompleteTextBox.MainWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:CSWPFAutoCompleteTextBox.UserControls.AutoCompleteTextBox">
+            <summary>
+            Achieve AutoComplete TextBox or ComboBox
+            </summary>
+        </member>
+        <member name="M:CSWPFAutoCompleteTextBox.UserControls.AutoCompleteTextBox.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:CSWPFAutoCompleteTextBox.UserControls.AutoCompleteTextBox"/> class.
+            </summary>
+        </member>
+        <member name="M:CSWPFAutoCompleteTextBox.UserControls.AutoCompleteTextBox.OnApplyTemplate">
+            <summary>
+            Override OnApplyTemplate method 
+            Get TextBox control out of Combobox control, and hook up TextChanged event.
+            </summary>
+        </member>
+        <member name="M:CSWPFAutoCompleteTextBox.UserControls.AutoCompleteTextBox.textBox_TextChanged(System.Object,System.Windows.Controls.TextChangedEventArgs)">
+            <summary>
+            main logic to generate auto suggestion list.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.Windows.Controls.TextChangedEventArgs"/> 
+            instance containing the event data.</param>
+        </member>
+        <member name="P:CSWPFAutoCompleteTextBox.UserControls.AutoCompleteTextBox.AutoSuggestionList">
+            <summary>
+            Gets or sets the auto suggestion list.
+            </summary>
+            <value>The auto suggestion list.</value>
+        </member>
+        <member name="T:CSWPFAutoCompleteTextBox.UserControls.AutoCompleteEntry">
+            <summary>
+            Extended ComboBox Item
+            </summary>
+        </member>
+        <member name="M:CSWPFAutoCompleteTextBox.UserControls.AutoCompleteEntry.#ctor(System.String,System.String,System.String)">
+            <summary>
+            Contrutor of AutoCompleteEntry class
+            </summary>
+            <param name="text">All the Text of the item </param>
+            <param name="bold">The already entered part of the Text</param>
+            <param name="unbold">The remained part of the Text</param>
+        </member>
+        <member name="P:CSWPFAutoCompleteTextBox.UserControls.AutoCompleteEntry.Text">
+            <summary>
+            Gets the text.
+            </summary>
+        </member>
+        <member name="T:CSWPFAutoCompleteTextBox.App">
+            <summary>
+            App
+            </summary>
+        </member>
+        <member name="M:CSWPFAutoCompleteTextBox.App.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:CSWPFAutoCompleteTextBox.App.Main">
+            <summary>
+            Application Entry Point.
+            </summary>
+        </member>
+    </members>
+</doc>
